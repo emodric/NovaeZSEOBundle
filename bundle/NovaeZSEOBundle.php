@@ -26,7 +26,7 @@ class NovaeZSEOBundle extends Bundle
         parent::build($container);
 
         $container->addCompilerPass(new CustomFallbackPass());
-        $eZExtension = $container->getExtension('ezpublish');
+        $eZExtension = $container->getExtension('ibexa');
         $eZExtension->addPolicyProvider(new PolicyProvider());
     }
 
